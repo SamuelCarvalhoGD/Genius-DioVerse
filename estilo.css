@@ -1,0 +1,62 @@
+/* - Cores - 
+    verde1 - 3fb374; v2 - 00E712;
+    azul1 - 2d4285;
+    azul2 - 4573e6; az3- #6576C2;
+    vermelho1 - b83f13; vm2 #E60021
+    amarelo1 - ebd72c; a2 - EBE000;
+*/
+
+body{ 
+    margin: 0;
+    background-color: #0b0b0d;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'azul verde'
+    'amarelo vermelho';
+    grid-gap: 10px;
+    border: 2px solid #000;
+    background-color: yellowgreen;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;   
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    /*background-color: #2d4285;*/
+    border-top-left-radius: 100%;
+}
+.green {
+    grid-area: verde;
+    background-color: green;
+    /*background-color: #3fb374;*/
+    border-top-right-radius: 100%;
+}
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    /*background-color: #ebd72c;*/
+    border-bottom-left-radius: 100%;
+}
+.red {
+    grid-area: vermelho;
+    /*background-color: #b83f13; */
+    background-color: red;
+    border-bottom-right-radius: 100%;
+}
+
+.selected {
+    opacity: 0.5;
+}
+
